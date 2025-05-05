@@ -58,7 +58,7 @@ fetchData((result) => {
 Promises is a representation of completion or failure of any asynchronous operation. It allows chaining of multiple asynchronous operations. There are basically 3 states in promises i.e., resolve, pending and reject.
 
 
-**File**: `promise.js`  
+**File**: `promises.js`  
 ```javascript
 function fetchData() {
     return new Promise((resolve, reject) => {
