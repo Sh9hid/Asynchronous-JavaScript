@@ -18,12 +18,11 @@ This repository demonstrates three approaches to handling asynchronous operation
 
 ## Theoretical Overview
 
-### Callbacks
+## 1. **Callbacks**  
 **What they are**:  
 Callbacks are those functions which are passed as arguments to another function and are executed when a particular task is completed.
 
 
-## 1. **Callbacks-Based Implementation**  
 **File**: `callbacks.js`  
 ```javascript
 function fetchData(callback) {
@@ -52,14 +51,12 @@ fetchData((result) => {
 - Quite complicated when dealing with multiple asynchronous operations which leads to callback hell.
 - Error handling is challenging task as the code becomes complicated and hard to understand.
 
-### Promises
+## 2. **Promise-Based Implementation** 
 
 **What they are**:  
 Promises is a representation of completion or failure of any asynchronous operation. It allows chaining of multiple asynchronous operations. There are basically 3 states in promises i.e., resolve, pending and reject.
 
 
-
-## 2. **Promise-Based Implementation**  
 **File**: `promise.js`  
 ```javascript
 function fetchData() {
@@ -108,15 +105,13 @@ In the above code, fetchData() function is either resolved or rejected. If the r
 
 - Requires deep understanding of Promises API as it includes multiple properties and methods.
 
-### Async/Await
+## 3. **Async-Await-Based Implementation**  
+
 **What it is**:  
 Async/await is a feature that is built on top of promises to make it better and efficient. It is more concise and provides a synchronous-like way to write asynchronous programs. await keyword is always used inside the async function scope.
 
 Syntactic sugar over Promises for writing async code in a synchronous style.  
 
-
-
-## 3. **Async-Await-Based Implementation**  
 **File**: `async-await.js`  
 ```javascript
 async function fetchData() {
