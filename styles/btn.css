@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -236,3 +237,102 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.output-box.animated-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00fff7;
+  width: 0;
+  animation:
+    typewriter 2s steps(40, end) forwards,
+    blink 0.7s step-end infinite;
+}
+
+@keyframes glowIn {
+  from {
+    opacity: 0;
+    text-shadow: none;
+  }
+  to {
+    opacity: 1;
+    text-shadow: 0 0 8px #00fff7, 0 0 16px #ff00f7;
+  }
+}
+
+.output-box.glow {
+  animation: glowIn 1.2s ease-out forwards;
+  opacity: 0;
+}
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  20% { text-shadow: -2px 0 red, 2px 0 cyan; }
+  40% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  60% { text-shadow: -2px 0 red, 2px 0 cyan; }
+  80% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  100% { text-shadow: none; }
+}
+
+.output-box.glitch {
+  animation: glitch 1s ease-in-out;
+  color: #fff;
+}
+/* Typewriter Animation */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.animated-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00fff7;
+  width: 0;
+  animation:
+    typewriter 2s steps(40, end) forwards,
+    blink 0.7s step-end infinite;
+}
+
+/* Glow Animation */
+@keyframes glowIn {
+  from {
+    opacity: 0;
+    text-shadow: none;
+  }
+  to {
+    opacity: 1;
+    text-shadow: 0 0 8px #00fff7, 0 0 16px #ff00f7;
+  }
+}
+
+.glow {
+  animation: glowIn 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  20% { text-shadow: -2px 0 red, 2px 0 cyan; }
+  40% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  60% { text-shadow: -2px 0 red, 2px 0 cyan; }
+  80% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  100% { text-shadow: none; }
+}
+
+.glitch {
+  animation: glitch 1s ease-in-out;
+  color: #fff;
+}
