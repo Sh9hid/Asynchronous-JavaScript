@@ -9,10 +9,9 @@ This repository demonstrates three approaches to handling asynchronous operation
    - [Callbacks](#callbacks)
    - [Promises](#promises)
    - [Async/Await](#asyncawait)
-2. [Code Implementation](#code-implementation)
-3. [Error Handling](#error-handling)
-4. [Comparison Table](#comparison-table)
-5. [Usage](#usage)
+
+<!-- 4. [Comparison Table](#comparison-table) -->
+4. [Contribution](#contribution)
 
 ---
 
@@ -23,7 +22,7 @@ This repository demonstrates three approaches to handling asynchronous operation
 Callbacks are those functions which are passed as arguments to another function and are executed when a particular task is completed.
 
 
-### 1. **Callbacks-Based Implementation**  
+## 1. **Callbacks-Based Implementation**  
 **File**: `callbacks.js`  
 ```javascript
 function fetchData(callback) {
@@ -59,7 +58,7 @@ Promises is a representation of completion or failure of any asynchronous operat
 
 
 
-### 2. **Promise-Based Implementation**  
+## 2. **Promise-Based Implementation**  
 **File**: `promise.js`  
 ```javascript
 function fetchData() {
@@ -116,7 +115,7 @@ Syntactic sugar over Promises for writing async code in a synchronous style.
 
 
 
-### 3. **Async-Await-Based Implementation**  
+## 3. **Async-Await-Based Implementation**  
 **File**: `async-await.js`  
 ```javascript
 async function fetchData() {
