@@ -78,9 +78,7 @@ This repository demonstrates three approaches to handling asynchronous operation
    - [Promises](#promises)
    - [Async/Await](#asyncawait)
 2. [Code Implementation](#code-implementation)
-3. [Error Handling](#error-handling)
-4. [Comparison Table](#comparison-table)
-5. [Usage](#usage)
+
 
 ---
 
@@ -208,33 +206,24 @@ document.getElementById("fetchBtn").addEventListener("click", () => {
 ### Error Handling
 
 - Callbacks	
-Manual checks (e.g., if (err))	Not used in modern implementations
+```javascript
+// Manual checks (e.g., if (err))	Not used in modern implementations
+
+```
 - Promises
+```javascript
 	.catch() block	catch(err => handleError(err))
+```
 - Async/Await	
+```javascript
 try/catch block	try { await call(); } catch (err) {...}
-javascript
 // Timeout promise example
 const timeoutPromise = new Promise((_, reject) => {
   setTimeout(() => reject(new Error("Timeout")), 5000);
 });
 
-// Race fetch against timeout
-Promise.race([fetchPromise, timeoutPromise])
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-Comparison Table
-Feature	Callbacks	Promises	Async/Await
-Syntax	Nested functions	.then() chains	async/await keywords
-Readability	Poor (callback hell)	Moderate	High
-Error Handling	Manual checks (e.g., if (err))	.catch()	try/catch blocks
-Debugging	Hard	Moderate	Easy
-Best For	Simple async tasks	Chained operations	Complex workflows
+```
 
 
-# Features
-- Countdown is a callback-based timer (setInterval).
-
-- Data fetching is Promise-based (fetch().then().catch()).
 
 You can find the link to the repository [here](https://github.com/Sh9hid/async-programming-in-js)..
