@@ -5,12 +5,13 @@ This repository demonstrates three approaches to handling asynchronous operation
 ---
 
 ## Table of Contents
-1. [Theoretical Overview](#theoretical-overview)
+1. [Theoretical Overview and Implementation](#theoretical-overview)
    - [Callbacks](#callbacks)
    - [Promises](#promises)
    - [Async/Await](#asyncawait)
-
-<!-- 4. [Comparison Table](#comparison-table) -->
+2. [Comparison](#comparison-table)
+3. [Best Practices and Use Cases](#best-practices-and-use-cases)
+4. [Migration and Adoption](#migration-and-adoption)
 4. [Contribution](#contribution)
 
 ---
@@ -152,7 +153,8 @@ getData();
 **Disadvantages of Async/Await**
 
 - It has limited support in the older versions.
-**Comparison**
+
+### **Comparison**
 - **Performance:**
 As we compare, promises and async/await is slightly overhead as compared to callbacks because of the abstraction layer. But the difference is as good as null.
 - **Readability and Maintainability:**
@@ -161,12 +163,12 @@ Async/await provides the most readable and maintainable code and followed by pro
 Async/await provides the best error handling syntax which provides much cleaner code. It is followed by promises and callbacks are mostly prone to errors.
 Sequential vs. Parallel Operations: All the three approaches provides both the sequential and parallel operations. Async/await and promises provides clean and maintainable syntax for sequential operations.
 
-**Best Practices and Use Cases**
+### **Best Practices and Use Cases**
 - **When to Use Callbacks:** Use callbacks either for simple and easy asynchronous operations or when handling those APIs that only support callbacks.
 - **When to Use Promises:** Promises are well suitable for handling multiple asynchronous operations in a more structured manner using .then.
 - **When to Use Async/Await:** Use Async/Await for writing clean and much readable asynchronous code, especially for complex tasks involving multiple asynchronous operations.
 
-**Migration and Adoption**
+### **Migration and Adoption**
 
 - **Migrating from Callbacks to Promises:** Rewrite callback-based code to use Promises for improved readability and error handling.
 - **Migrating from Promises to Async/Await:** Convert Promises to Async/Await for even cleaner and more synchronous-like code.
@@ -177,5 +179,6 @@ Callbacks, Promises, and Async/Await provides us different approaches towards ha
 
 ---
 
-Contribution:
+### Contribution:
+
 Feel free to contribute and open a PR at the repository [here](https://github.com/Sh9hid/async-programming-in-js).
