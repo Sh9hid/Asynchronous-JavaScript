@@ -12,7 +12,8 @@ This repository demonstrates three approaches to handling asynchronous operation
 2. [Comparison](#comparison-table)
 3. [Best Practices and Use Cases](#best-practices-and-use-cases)
 4. [Migration and Adoption](#migration-and-adoption)
-4. [Contribution](#contribution)
+5. [Conclusion](#conclusion)
+6. [Contribution](#contribution)
 
 ---
 
@@ -167,8 +168,12 @@ Sequential vs. Parallel Operations: All the three approaches provides both the s
 
 - **Migrating from Callbacks to Promises:** Rewrite callback-based code to use Promises for improved readability and error handling.
 - **Migrating from Promises to Async/Await:** Convert Promises to Async/Await for even cleaner and more synchronous-like code.
-**Conclusion**
-Callbacks, Promises, and Async/Await provides us different approaches towards handling asynchronous operations in JavaScript. While callbacks are simple but prone to callback hell, Promises and Async/Await provide cleaner and more readable code structures. Choosing the right approach depends on the specific requirements and complexity of the asynchronous task
+
+### **Conclusion**
+
+- Callbacks, Promises, and Async/Await provides us different approaches towards handling asynchronous operations in JavaScript. 
+- While callbacks are simple but prone to callback hell, Promises and Async/Await provide cleaner and more readable code structures. 
+- Choosing the right approach depends on the specific requirements and complexity of the asynchronous task
 
 
 
